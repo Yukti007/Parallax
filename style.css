@@ -1,0 +1,135 @@
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    background-color: #111;
+    overflow: hidden;
+}
+
+.salute {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.saluteText {
+    font-size: 50vw;
+    color: #333;
+    cursor: default;
+}
+
+.textContainer {
+    flex: 3;
+}
+
+.imageContainer {
+    flex: 1;
+    background: url(image/person.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nameContainer {
+    height: 100vh;
+    background-color: #8294C4;
+}
+
+.name {
+    font-size: 15vw;
+    color: #f6eeee;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.jobTitleContainer{
+    height: 100vh;
+}
+
+.dark {
+    background: url(image/dark.png);
+}
+
+.light {
+    background: url(image/light.png);
+
+}
+
+.jobTitle {
+    font-size: 10vw;
+    color: #333;
+    line-height: 100vh;
+    cursor: default;
+}
+.github{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.githubTitle{
+    color: #333;
+    font-size: 100px;
+}
+.githubChart{
+    width: 820px;
+    text-align: center;
+}
+.date{
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 2s all ease;
+}
+.active:nth-child(4n){
+    background-color:#195b2c;
+
+}
+.githubChart:hover .active:nth-child(2n+1){
+    background-color: #195b2c;
+}
+.githubChart:hover .active:nth-child(2n){
+    background-color: #063f24;
+}
+.githubSm{
+    display: none;
+}
+
+
+@media screen and (max-width:1024px) 
+{
+ .githubChart{
+    display: none;
+ } 
+ .githubTitle{
+    text-align: center;
+    font-size: 10vw;
+ }
+ .githubSm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    font-size: 30px;
+    text-align: center;
+ }  
+}
